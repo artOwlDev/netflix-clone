@@ -1,0 +1,133 @@
+.navbar{
+    background-color: var(--main-color);
+    color: rgba(255, 255, 255, 0.911);
+    height: 7vh;
+    position: fixed;
+    width: 100%;
+    background: linear-gradient(to top, transparent 0%,rgb(0,0,0,0.3) 50%);
+    transition: all 1s;
+    z-index: 99;
+
+    &.scrolled{
+        background-color: var(--main-color);
+    }
+
+    .container{
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        min-height: 70px;
+
+        span{            
+
+            font-size: 16px;
+            font-family: 'PT Sans', sans-serif;
+
+
+            &:hover{
+                cursor: pointer;
+                color: rgba(255, 255, 255, 0.8);
+
+            }
+        }
+
+        .left{
+            margin-left: 40px;
+            display: flex;
+            align-items: center;
+
+            img{
+                object-fit: contain;
+                height: 30px;
+                margin-right: 30px;
+                
+            }
+
+            span{
+                margin: 10px;
+            }
+        }
+
+        .right{
+            margin-right: 40px;
+            display: flex;
+            align-items: center;
+
+            img{
+                object-fit: contain;
+                height: 35px;
+                border-radius: 50px;
+                cursor: pointer;
+                margin-left: 8px;
+                
+            }
+
+            .icon{
+                margin: 0px 12px;
+                cursor: pointer;
+                
+            }
+
+            .profile{
+
+                .options{
+                    display: none;
+                    font-size: 14px;
+
+
+                    .profile-manage{
+                        display: flex;
+                        align-items: center;
+                    }
+
+                    .account{
+                        display: flex;
+                        align-items: center;
+                    }
+
+                    .logout{
+
+                        padding: 5px;
+                        margin: auto;
+
+                    }
+
+                    .icon-options{
+                        margin: 0 8px;
+                    }
+
+                }
+
+                span{
+                    padding: 10px;
+                    cursor: pointer;
+                }
+
+                &:hover{
+
+
+                    .options{
+                        display: flex;
+                        flex-direction: column;
+                        background-color: rgba(0, 0, 0, 0.993);
+                        border-radius: 5px;
+                        position: absolute;
+                        top: 70px;
+                        right: 10px;
+                        transition-delay: 2s;
+                        
+                    }
+
+
+
+                    
+                }
+            }
+        }
+
+        
+    }
+}
+
+
